@@ -11,7 +11,7 @@ export default function PaymentsPage() {
   // UseEffect hook to fetch data when the component mounts
   useEffect(() => {
     async function fetchData() {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/payments`);
+      const res = await fetch(` /api/payments`);
       const data = await res.json();
       setPayments(data.data);  // Store the fetched payments in state
     }

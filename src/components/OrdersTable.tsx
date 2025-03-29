@@ -50,7 +50,7 @@ export default function OrdersTable({ initialOrders }: OrdersTableProps) {
     setIsDeleting(id);
     try {
       const response = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL}/api/orders/${id}`,
+        ` /api/orders/${id}`,
         {
           method: "DELETE",
         }

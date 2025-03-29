@@ -42,7 +42,7 @@ export default function ProductsTable({ initialProducts }: ProductsTableProps) {
     setIsDeleting(id);
     try {
       const response = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL}/api/products/${id}`,
+        ` /api/products/${id}`,
         {
           method: "DELETE",
         }

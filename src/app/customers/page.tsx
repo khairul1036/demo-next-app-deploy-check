@@ -9,7 +9,7 @@ export default function CustomersPage() {
 
   useEffect(() => {
     async function fetchData() {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/customers`);
+      const res = await fetch(`/api/customers`);
       const data = await res.json();
       setCustomers(data.data);
     }

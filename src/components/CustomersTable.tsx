@@ -36,7 +36,7 @@ export default function CustomersTable({
     setIsDeleting(id);
     try {
       const response = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL}/api/customers/${id}`,
+        ` /api/customers/${id}`,
         {
           method: "DELETE",
         }

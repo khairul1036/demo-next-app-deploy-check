@@ -26,7 +26,7 @@ const ProductBarChart: React.FC = () => {
     const fetchProducts = async () => {
       try {
         const response = await fetch(
-          `${process.env.NEXT_PUBLIC_API_URL}/api/products`
+          ` /api/products`
         );
         const result = await response.json();
 
