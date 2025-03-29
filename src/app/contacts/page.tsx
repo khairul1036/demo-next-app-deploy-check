@@ -21,7 +21,7 @@ export default async function ContactsPage() {
   const contacts = await getContacts();
 
   if (!contacts.length) {
-    return <div>Loading contacts...</div>;
+    return <div>Loading contacts..</div>;
   }
 
   return (
